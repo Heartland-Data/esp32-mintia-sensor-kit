@@ -1,0 +1,27 @@
+; センサデータ取得開始コマンド送信マクロ
+
+; 変数定義
+json = '{"cmd":"sensor_start","params":{}}'
+strlen json
+jsonlen = result
+lowbyte = jsonlen & $FF
+highbyte = (jsonlen >> 8) & $FF
+
+; バイナリデータ送信
+sendln ''  ; 念のため改行を送信
+pause 1
+
+; SYNC (0x5AA5, Little Endian: A5 5A)
+send $A5 $5A
+
+; LENGTH (Little Endian)
+send lowbyte highbyte
+
+; TYPE (0x10: コマンド要求)
+send $10
+
+; JSONデータ
+send json
+
+pause 1
+messagebox 'センサデータ取得開始コマンドを送信しました' 'マクロ実行完了'

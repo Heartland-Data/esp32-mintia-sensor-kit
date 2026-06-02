@@ -1,0 +1,12 @@
+build/
+sdkconfig
+sdkconfig.old
+.vscode/
+!.vscode/launch.json
+main/include/dt_plus/
+.cache/
+eim_config.toml
+.venv/
+gitleaks-report.json
+semgrep.yml
+pii_check_report.txt

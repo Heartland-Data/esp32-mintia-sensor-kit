@@ -1,0 +1,72 @@
+version = 1
+
+# ============================================================
+# 自社著作 — Apache-2.0 / Heartland Data inc. 2026
+# ============================================================
+
+[[annotations]]
+path = [
+  "CMakeLists.txt",
+  "main/CMakeLists.txt",
+  "components/dt_plus/CMakeLists.txt",
+  "components/uart_log/CMakeLists.txt",
+  "components/xm125/CMakeLists.txt",
+  "test/double/CMakeLists.txt",
+  "test/test/CMakeLists.txt",
+]
+SPDX-FileCopyrightText = "2026 Heartland Data inc."
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+  ".clangd",
+  ".gitattributes",
+  ".gitignore",
+  ".vscode/launch.json",
+  "sdkconfig.defaults",
+]
+SPDX-FileCopyrightText = "2026 Heartland Data inc."
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+  "docs/images/mintia-series.JPG",
+  "docs/images/mintia-board-visible.png",
+  "docs/images/mintia-assembled-closed.png",
+]
+SPDX-FileCopyrightText = "2026 Heartland Data inc."
+SPDX-License-Identifier = "Apache-2.0"
+
+[[annotations]]
+path = [
+  "test/Dockerfile",
+  "test/runTests.sh",
+  "test/teraterm_macro/mintia_sensor_start.ttl",
+  "test/teraterm_macro/mintia_sensor_stop.ttl",
+]
+SPDX-FileCopyrightText = "2026 Heartland Data inc."
+SPDX-License-Identifier = "Apache-2.0"
+
+# ============================================================
+# amg8833 (Adafruit Industries) — MIT
+# ============================================================
+
+[[annotations]]
+path = [
+  "components/amg8833/CMakeLists.txt",
+  "components/amg8833/README_ESP32.md",
+]
+SPDX-FileCopyrightText = "Adafruit Industries"
+SPDX-License-Identifier = "MIT"
+
+# ============================================================
+# mlx90640 (Melexis + Heartland) — Apache-2.0
+# ============================================================
+
+[[annotations]]
+path = [
+  "components/mlx90640/CMakeLists.txt",
+  "components/mlx90640/README.md",
+]
+SPDX-FileCopyrightText = ["2017 Melexis N.V.", "2025 Heartland.Data Inc."]
+SPDX-License-Identifier = "Apache-2.0"
